@@ -66,7 +66,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-пароле
+          passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-парол
           script: |
             sudo docker pull natolin/infra_actions
             sudo docker stop $(sudo docker ps -a -q)
